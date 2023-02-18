@@ -8,6 +8,4 @@ defmodule Cards do
   def higher?({value1, suit}, {value2, suit}, trump_suit), do: numericValue(value1) > numericValue(value2)
   def higher?({_, suit}, {_, trump_suit}, trump_suit), do: false
   def higher?({_, _}, {_, _}, _), do: true
-
-
 end
